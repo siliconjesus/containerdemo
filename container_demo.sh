@@ -1,4 +1,4 @@
-#!/usr/bin/exec bash
+#!/usr/bin/env bash
 
 # Demo first part - create chroot environment - stuff bash and top into it.
 
