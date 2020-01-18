@@ -4,7 +4,7 @@
 
 ##### PREP #####
 
-CHROOT=/tmp/chroot
+CHROOT=~/tmp/chroot
 CHROOTLIB=$CHROOT/lib64
 CHROOTBIN=$CHROOT/bin
 
@@ -24,6 +24,9 @@ for THISLIB in `echo $MYLIBRARIES`
    do
    	cp $THISLIB $CHROOTLIB/
    done
+
+# Still missing libraries and in a time crunch.  I suspect I need to copy kernel
+# things into place before bash will execute
 
 # Demo second part - namespaces
 # first lets start up a basic PID namespace
